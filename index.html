@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    
+    <div class="video-wrapper">
+        <div class="wrap">
+            <video  class="video-player"  >
+            </video>
+            <div class="btn-se">
+                <button class="play-btn2" style="font-size: 50px;" onclick="playPause()">►</button>
+            </div>
+            <div class="rek">
+                <a href=""> <h1>Bu yerda sizning reklamangiz bo'lishi mumkin!!!</h1> </a>
+                <img src="./images/cancel.svg" width="25" height="25" alt="" class="rek-img">
+            </div>
+        </div>
+
+        <div class="video-player-controls">
+
+            <div class="video-buttons">
+                <button class="play-btn" onclick="playPause()">►</button>
+                <!-- <button class="pause-btn">Stop  &#9611;</button> -->
+                
+            </div>
+
+            <div class="rewind">
+                <span class="current-video-time">--:--</span>
+                <input type="range" class="rewind-input" min="0" max="100">
+                <span class="full-video-time">--:--</span>
+            </div>
+
+            <div class="volume">
+                <img src="./images/volume-up-interface-symbol-1.svg" width='20' height="20" class="volume-icon" alt="">
+                <input type="range" class="volume-input" min="0" max="100" style="margin: 0 10px;">
+                <button class="fullscreen-btn">
+                    <img src="./images/expand.svg" width='20' height="25" alt="">
+                </button>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
